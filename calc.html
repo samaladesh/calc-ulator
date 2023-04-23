@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+    <!-- Calculator Body -->
+    <div class="calc-body">
+
+        <!-- Calculator Display Screen -->
+        <div class="calc-screen">
+            <input id="calc-operation" placeholder="0">
+            <input id="calc-typed" placeholder="0">
+        </div>
+
+        <!-- Calculator Buttons -->
+        <div class="calc-button-row">
+            <button class="ac" onclick="clr()">AC</button>
+            <button class="opt" >&#43;&#47;&#8722;</button>
+            <button class="opt" value="%" onclick="vbtn(this)">%</button>
+            <button class="opt" value="/" onclick="vbtn(this)">&#247;</button>
+            <button id="btn7" value="7" onclick="vbtn(this)">7</button>
+            <button id="btn8" value="8" onclick="vbtn(this)">8</button>
+            <button id="btn9" value="9" onclick="vbtn(this)">9</button>
+            <button class="opt" id="btn*"value="*" onclick="vbtn(this)">x</button>
+            <button id="btn4" value="4" onclick="vbtn(this)">4</button>
+            <button id="btn5" value="5" onclick="vbtn(this)">5</button>
+            <button id="btn6" value="6" onclick="vbtn(this)">6</button>
+            <button class="opt" id="btn-" value="-" onclick="vbtn(this)">-</button>
+            <button id="btn1" value="1" onclick="vbtn(this)">1</button>
+            <button id="btn2" value="2" onclick="vbtn(this)">2</button>
+            <button id="btn3" value="3" onclick="vbtn(this)">3</button>
+            <button class="opt" id="btn+" value="+"onclick="vbtn(this)">+</button>
+            <button id="btn0" value="0" onclick="vbtn(this)">0</button>
+            <button id="btnDot" value="." onclick="vbtn(this)">.</button>
+            <button onclick="dlt()">&#9003;</button>
+            <button class="opt" onclick="sbmt()">&#61;</button>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
